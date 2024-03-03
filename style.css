@@ -40,9 +40,12 @@ header {
 }
 
 header > h1 {
-    font-size: 1.5rem;
-    padding: 5rem 3rem;
+    font-size: 4rem;
+    padding: 12rem 3rem;
     font-family: 'Montserrat', sans-serif;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
 }
 
 nav {
@@ -51,7 +54,7 @@ nav {
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
     -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
-    font-size: 13px;
+    font-size: 20px;
 }
 
 nav > ul {
@@ -59,6 +62,26 @@ nav > ul {
     justify-content: space-between;
     list-style: none;
     padding: 0 0.5em;
+}
+
+
+@media (max-width: 768px) {
+    header > h1 {
+        font-size: 1.5rem;
+    padding: 5rem 3rem;
+    font-family: 'Montserrat', sans-serif;
+    }
+
+    nav { 
+        font-size: 14px;
+    }
+
+    nav > ul {
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        padding: 0 0.5em;
+    }
 }
 
 /* 320px — 480px: Mobile devices
