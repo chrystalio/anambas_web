@@ -1,6 +1,6 @@
 :root {
     --primary-color: #0D2C54;
-    --secondary-color: #F9F9F9;
+    --secondary-color: #F1F5F9;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
@@ -11,7 +11,12 @@
     box-sizing: border-box;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -39,48 +44,111 @@ header {
     text-align: center;
 }
 
-header > h1 {
+header>h1 {
     font-size: 4rem;
     padding: 12rem 3rem;
     font-family: 'Montserrat', sans-serif;
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
-    -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
 }
 
 nav {
     background-color: var(--primary-color);
     padding: 20px 0;
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
-    -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
     font-size: 20px;
 }
 
-nav > ul {
+nav>ul {
     display: flex;
     justify-content: space-between;
     list-style: none;
     padding: 0 0.5em;
 }
 
+main {
+    display: flex;
+}
+
+#content {
+    padding: 3rem;
+    font-size: 1rem;
+    width: 50%;
+}
+
+#content p {
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
+    text-align: justify;
+    font-family: 'Poppins', sans-serif;
+}
+
+article > img {
+    padding-top: 1rem;
+    width: 100%;
+    height: auto;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+}
+
+#geografis h2 {
+    padding-top: 1rem;
+}
+
+#budaya h2 {
+    padding-top: 1rem;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: absolute;
+    bottom: 100;
+    width: 100%;
+}
 
 @media (max-width: 768px) {
-    header > h1 {
+    header>h1 {
         font-size: 1.5rem;
-    padding: 5rem 3rem;
-    font-family: 'Montserrat', sans-serif;
+        padding: 5rem 3rem;
+        font-family: 'Montserrat', sans-serif;
     }
 
-    nav { 
+    nav {
         font-size: 14px;
     }
 
-    nav > ul {
+    nav>ul {
         display: flex;
         justify-content: space-between;
         list-style: none;
         padding: 0 0.5em;
+    }
+
+    #content {
+        padding: 1rem;
+        font-size: 0.8rem;
+        width: 100%;
+    }
+
+    #content p {
+        margin-top: 0.5rem;
+        font-size: 1rem;
+    }
+
+    article > img {
+        padding-top: 1rem;
+        width: 100%;
+        height: auto;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        border-radius: 20px;
     }
 }
 
