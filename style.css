@@ -1,46 +1,18 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Actor&family=Metrophobic&family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap'); */
+:root {
+    --primary-color: #0D2C54;
+    --secondary-color: #F9F9F9;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 * {
-    padding: 0;
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-
-body > header {
-    background-image: url("assets/img/background3.jpg");
-    /* on background image add little bit dark */
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    color: #fff;
-    text-align: center;
-}
-
-header > h1 {
-    padding: 3em;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 3em;
-    font-weight: 700;
-}
-
-nav {
-    background-color: #0D2C54;
-    padding: 20px 0;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1em;
-    
-    /* Shadow */
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
-    -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
-}
-
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Metrophobic', sans-serif;
-}
-
-p {
-    font-family: 'Actor', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 a {
@@ -53,37 +25,43 @@ a:hover {
     text-decoration: underline;
 }
 
+body {
+    background-color: var(--secondary-color);
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    background-image: url("assets/img/background3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+}
+
+header > h1 {
+    font-size: 1.5rem;
+    padding: 5rem 3rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav {
+    background-color: var(--primary-color);
+    padding: 20px 0;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    font-size: 13px;
+}
+
 nav > ul {
-    padding: 0 4.5em;
-    list-style: none;
     display: flex;
     justify-content: space-between;
+    list-style: none;
+    padding: 0 0.5em;
 }
 
-main{
-    background-color: #EEEDED;
-    padding: 4em;
-}
-
-h2 {
-    font-size: 1.4em;
-    font-weight: 700;
-    padding: 1em 0;
-}
-
-main > p {
-    font-size: 1.2em;
-    line-height: 1.5em;
-    padding: 1em 0;
-}
-
-aside {
-    display: flex;
-    justify-content: end;
-    padding: 1em 0;
-}
-
-
-#geografis img {
-    width: 920px;
-}
+/* 320px — 480px: Mobile devices
+481px — 768px: iPads, Tablets
+769px — 1024px: Small screens, laptops
+1025px — 1200px: Desktops, large screens */
