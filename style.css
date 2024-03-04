@@ -145,6 +145,41 @@ aside h2 {
     height: auto;
 }
 
+#informasi {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    margin: 2rem 5.5rem;
+    background-color: #f7f7f7;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+#informasi h4 {
+    text-align: center;
+    padding: 1rem;
+}
+
+table,
+th,
+td {
+    border-collapse: collapse;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+th,
+td {
+    padding: 0.5rem 3rem;
+    text-align: left;
+}
+
+#informasi a {
+    color: #0D2C54;
+    text-decoration: none;
+}
+
 footer {
     background-color: var(--primary-color);
     color: #fff;
@@ -158,6 +193,105 @@ footer {
     font-size: 19px;
 
 }
+
+@media (max-width: 900px) {
+    header>h1 {
+        font-size: 2rem;
+        padding: 6rem 3rem;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    nav {
+        font-size: 14px;
+    }
+
+    nav>ul {
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        padding: 0 0.5em;
+    }
+
+    main {
+        flex-direction: column-reverse;
+    }
+
+    #content {
+        padding: 1rem;
+        font-size: 1rem;
+        width: 100%;
+    }
+
+    #content p {
+        margin-top: 0.5rem;
+        font-size: 1.5rem;
+        width: 100%;
+    }
+
+    article>img {
+        padding-top: 1rem;
+        width: 100%;
+        height: auto;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        border-radius: 20px;
+    }
+
+    aside {
+        width: 96%;
+        padding: 1rem;
+        margin: 1rem;
+        background-color: #ffffff;
+    }
+
+    aside h2 {
+        font-size: 1.5rem;
+    }
+
+    #quote {
+        font-style: italic;
+        margin: 0 auto;
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+        font-size: 16px;
+    }
+
+    #informasi {
+        font-family: 'Poppins', sans-serif;
+        font-size: 16px;
+        margin: 3rem 0.5rem;
+        background-color: #f7f7f7;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        border-radius: 10px;
+    }
+    
+    #informasi h4 {
+        text-align: center;
+        padding: 1rem;
+        font-size: 1.5rem;
+    }
+    
+    table,
+    th,
+    td {
+        border-collapse: collapse;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        border-radius: 10px;
+    }
+    
+    th,
+    td {
+        padding: 0.9rem 7.5rem;
+        text-align: left;
+    }
+
+    footer {
+        font-size: 16px;
+    }
+}
+
 
 @media (max-width: 768px) {
     header>h1 {
@@ -219,6 +353,36 @@ footer {
         text-align: center;
         font-family: 'Poppins', sans-serif;
         font-size: 12px;
+    }
+
+    #informasi {
+        font-family: 'Poppins', sans-serif;
+        font-size: 12px;
+        margin: 1rem 0.5rem;
+        background-color: #f7f7f7;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        border-radius: 10px;
+    }
+    
+    #informasi h4 {
+        text-align: center;
+        padding: 1rem;
+    }
+    
+    table,
+    th,
+    td {
+        border-collapse: collapse;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        border-radius: 10px;
+    }
+    
+    th,
+    td {
+        padding: 0.9rem 2rem;
+        text-align: left;
     }
 
     footer {
