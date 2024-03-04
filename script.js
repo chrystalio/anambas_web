@@ -21,3 +21,11 @@ document.addEventListener("DOMContentLoaded", () => {
         header.style.display = "block";
     }
 });
+
+
+// Set current year to footer
+const year = new Date().getFullYear();
+const copyRight = document.getElementById("copyright");
+
+copyRight.textContent = `© ${year} Kabupaten Kepulauan Anambas`;
+
